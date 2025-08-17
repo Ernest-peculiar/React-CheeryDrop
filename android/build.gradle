@@ -11,6 +11,21 @@ buildscript {
     classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
   }
 }
+  dependencies {
+    // React Native
+    implementation("com.facebook.react:react-android")
+    if (hermesEnabled.toBoolean()) {
+        implementation("com.facebook.react:hermes-android")
+    } else {
+        implementation jscFlavor
+    }
+
+    // Expo autolinking will handle gesture-handler, reanimated, async-storage, etc.
+    // No need for: implementation project(':react-native-gesture-handler')
+    // No need for: implementation project(':@react-native-async-storage_async-storage')
+    // No need for: implementation project(':react-native-reanimated')
+}
+
 
 def reactNativeAndroidDir = new File(
   providers.exec {
