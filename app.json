@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ernestpeculiar.CheeryDrop"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,8 @@
         "backgroundColor": "#FFFDE4"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.ernestpeculiar.CheeryDrop"
+      "package": "com.ernestpeculiar.CheeryDrop",
+      "versionCode": 1
     },
     "web": {
       "bundler": "metro",
@@ -29,7 +31,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "../assets/icon.png",
+          "image": "./assets/icon.png",
           "imageWidth": 512,
           "resizeMode": "contain",
           "backgroundColor": "#FFFDE4"
