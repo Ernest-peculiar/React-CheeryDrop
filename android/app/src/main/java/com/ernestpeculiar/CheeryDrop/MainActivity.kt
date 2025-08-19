@@ -1,4 +1,4 @@
-package com.ernestpeculiar.CheeryDrop
+package com.cheerydrop
 
 import android.os.Build
 import android.os.Bundle
